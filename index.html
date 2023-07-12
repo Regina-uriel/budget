@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget App</title>
-    <link rel="stylesheet" href="style.ccss">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -24,9 +24,33 @@
                     <!-- 
                         <p class="hide" id="product-cost-error"
                      -->
+                     <input type="num" id="user-amount" placeholder="enter cost of product">
+                     <button class="submit" id="check-amount">Check Amount</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- output -->
+    <div class="output-container flex-space">
+        <p>Total Budget<span id="amout">0</span></p>
+        
+        <p>Balance<span id="balance user-amount">0</span></p>
+        
+        <p>Expenses<span id="Expenditure">0</span></p>
+        
+    </div>
+
+    <!-- list -->
+
+    <div class="list">
+        <h3>Expenses List</h3>
+        <div class="list-container" id="list">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
